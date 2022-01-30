@@ -7,7 +7,7 @@ This is the application of a private Blockchain, which can create a Genesis Bloc
 - Visual Studio Code is used as integrated development environment (IDE).
 - The GET and POST API endpoints were implemented with Postman#
 - Project dependancies to be installed by: ´´npm install´´
-- Application started with: ´´node app.js´´
+- Application started with: `node app.js`
 
 
 ## API endpoints
