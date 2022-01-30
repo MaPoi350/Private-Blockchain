@@ -1,0 +1,26 @@
+
+mthe8gX7N3WGtuj6JcD8TvmxD4YUWjvbt8
+{
+    "address":"mthe8gX7N3WGtuj6JcD8TvmxD4YUWjvbt8"
+}
+HxGuMVx+9TJ0IhoUDVwz8sgbQKK5r4a2uK1xIgVK2lYuJ2bKDgr4yRYFdb9n3f+2z8/y0Bcsull8vC9ijdKi0H4=
+{
+    "address":"mthe8gX7N3WGtuj6JcD8TvmxD4YUWjvbt8",
+    "signature":"Hxcpp/qSS7LC9uKoL6yzaEnt+GEWwE2zrUScZ6wXTqBUQJqL4ZctWLhRcMS6KMzMFNeFrYZnuckQYiNJctr578I=",
+    "message":"mthe8gX7N3WGtuj6JcD8TvmxD4YUWjvbt8:1643547632:starRegistry",
+    "star": {
+                "dec": "68° 52'56.9",
+                "ra": "16h 29m 1.0s",
+                "story": "Testing the story 4"
+    }
+}
+
+
+GET
+http://localhost:8000/block/height/0
+POST
+http://localhost:8000/requestValidation
+POST
+http://localhost:8000/submitStar
+GET
+http://localhost:8000/blocks/mhxSpV92znFJA8BuLN2s6fMv3yCNLwfhDb
