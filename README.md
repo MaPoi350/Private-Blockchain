@@ -1,40 +1,18 @@
 # Private Blockchain Application
 
-You are starting your journey as a Blockchain Developer, this project allows you to demonstrate
-that you are familiarized with the fundamentals concepts of a Blockchain platform.
-Concepts like:
-    - Block
-    - Blockchain
-    - Wallet
-    - Blockchain Identity
-    - Proof of Existance
+This is the application of a private Blockchain, which can create a Genesis Block, sign and verify a message, add a star structure and look up data linked to an address. 
 
-Are some of the most important components in the Blockchain Framework that you will need to describe and also
-why not? Implement too.
+## Getting started
+Install a bitcoin (test) wallet to generate a wallet address. Bitcoin Core is used here.
+Visual Studio Code is used as integrated development environment (IDE).
+The GET and POST API endpoints were implemented with Postman
 
-In this project you will have a boilerplate code with a REST Api already setup to expose some of the functionalities
-you will implement in your private blockchain.
 
-## What problem will you solve implementing this private Blockchain application?
+## API endpoints
 
-Your employer is trying to make a test of concept on how a Blockchain application can be implemented in his company.
-He is an astronomy fans and he spend most of his free time on searching stars in the sky, that's why he would like
-to create a test application that will allows him to register stars, and also some others of his friends can register stars
-too but making sure the application know who owned each star.
+The application runs locally by default on the 8000 port.
+Following endpoints are used:
 
-### What is the process describe by the employer to be implemented in the application?
-
-1. The application will create a Genesis Block when we run the application.
-2. The user will request the application to send a message to be signed using a Wallet and in this way verify the ownership over the wallet address. The message format will be: `<WALLET_ADRESS>:${new Date().getTime().toString().slice(0,-3)}:starRegistry`;
-3. Once the user have the message the user can use a Wallet to sign the message.
-4. The user will try to submit the Star object for that it will submit: `wallet address`, `message`, `signature` and the `star` object with the star information.
-    The Start information will be formed in this format:
-    ```json
-        "star": {
-            "dec": "68° 52' 56.9",
-            "ra": "16h 29m 1.0s",
-            "story": "Testing the story 4"
-		}
     ```
 5. The application will verify if the time elapsed from the request ownership (the time is contained in the message) and the time when you submit the star is less than 5 minutes.
 6. If everything is okay the star information will be stored in the block and added to the `chain`
