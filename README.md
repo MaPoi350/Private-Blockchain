@@ -3,15 +3,21 @@
 This is the application of a private Blockchain, which can create a Genesis Block, sign and verify a message, add a star structure and look up data linked to an address. 
 
 ## Getting started
-Install a bitcoin (test) wallet to generate a wallet address. Bitcoin Core is used here.
-Visual Studio Code is used as integrated development environment (IDE).
-The GET and POST API endpoints were implemented with Postman
+- Install a bitcoin (test) wallet to generate a wallet address. Bitcoin Core is used here.
+- Visual Studio Code is used as integrated development environment (IDE).
+- The GET and POST API endpoints were implemented with Postman#
+- Project dependancies to be installed by: ´´npm install´´
+- Application started with: ´´node app.js´´
 
 
 ## API endpoints
 
-The application runs locally by default on the 8000 port.
-Following endpoints are used:
+- The application runs locally by default on the 8000 port.
+- Following endpoints are used:
+    - GET: http://localhost:8000/block/height/0 
+    - POST:http://localhost:8000/requestValidation
+    - POST: http://localhost:8000/submitstar
+    - GET: http://localhost:8000/blocks/$walletaddress$
 
     ```
 5. The application will verify if the time elapsed from the request ownership (the time is contained in the message) and the time when you submit the star is less than 5 minutes.
